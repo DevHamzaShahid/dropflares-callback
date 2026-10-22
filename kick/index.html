@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Returning to Dropflares Studio</title>
+  </head>
+  <body>
+    <p>Returning to Dropflares Studio…</p>
+    <p><a id="back" href="dropflares://kick/callback">Tap here if the app doesn't open.</a></p>
+    <script>
+      // Forwards Kick's sign-in result (code and state) to the app. Holds no secrets.
+      var target = 'dropflares://kick/callback' + window.location.search;
+      document.getElementById('back').href = target;
+      window.location.replace(target);
+    </script>
+  </body>
+</html>
