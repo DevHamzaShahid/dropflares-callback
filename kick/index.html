@@ -8,10 +8,10 @@
   </head>
   <body>
     <p>Returning to Dropflares Studio…</p>
-    <p><a id="back" href="dropflares://kick/callback">Tap here if the app doesn't open.</a></p>
+    <p><a id="back" href="dropflaresstudio://kick/callback">Tap here if the app doesn't open.</a></p>
     <script>
       // Forwards Kick's sign-in result (code and state) to the app. Holds no secrets.
-      var target = 'dropflares://kick/callback' + window.location.search;
+      var target = 'dropflaresstudio://kick/callback' + window.location.search;
       document.getElementById('back').href = target;
       window.location.replace(target);
     </script>
